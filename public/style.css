@@ -1,0 +1,220 @@
+/* normalize part (начало) */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+b, strong {
+    font-weight: bolder;
+}
+sub, sup {
+    font-size: 75%;
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline;
+}
+    sub {
+        bottom: -0.25em;
+    }
+    sup {
+        top: -0.5em;
+    }
+ul {
+    list-style-position: inside;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+a {
+    text-decoration: none;
+}
+/* normalize part (конец) */
+
+.shop {
+    /* background-color: antiquewhite; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto;
+    max-width: 1260px;
+    min-width: 560px;
+}
+.products {
+    /* background-color: aquamarine; */
+    display: flex;
+}
+.control {
+    /* background-color: blanchedalmond; */
+    display: flex;
+}
+
+.form_arrangement, .message {
+    margin-left: 1rem;
+}
+.message p {
+    font-size: 1rem;
+    color: red;
+    font-style: italic;
+}
+.catalogue, .basket {
+    /* background-color: cadetblue; */
+    margin-right: 1rem;
+    padding: 0.4rem 1rem;
+}
+.description {
+    display: flex;
+    flex-direction: column;
+    /* width: 20vw; */
+    min-width: 120px;
+}
+.text_description p {
+    font-size: 0.8rem;
+    margin: 0.4rem;
+    text-align: justify;
+}
+.text_description h3 {
+    font-size: 1.2rem;
+    font-weight: 1.4rem;
+    text-align: center;
+}
+.text_description h4 {
+    font-size: 0.8rem;
+    margin: 0.2rem;
+    color: rgb(163, 163, 0);
+    font-weight: 400;
+    text-align: center;
+}
+.description img {
+    margin: 0.4rem auto;
+    max-width: 20vw;
+    min-width: 120px;
+}
+.entry {
+    display: flex;
+    flex-direction: column;
+    background-color: bisque;
+    padding: 1rem;
+    max-width: 200px;
+    
+}
+.entry input {
+    margin: 0.4rem;
+    padding: 0.2rem;
+    width: 100%;
+    min-width: 100px;
+    box-sizing: border-box;
+}
+.entry h4, .entry p {
+    margin: 1rem auto;
+    font-weight: 400;
+}
+.entry a {
+    display: block;
+    color: black;
+    background-color: rgb(164, 167, 0);
+    padding: 0.4rem;
+    border-radius: 0.3rem;
+    box-shadow: 2px 2px 2px rgb(37, 37, 0);
+}
+.entry a:hover {
+    background-color: rgb(94, 95, 0);
+    color: white;
+}
+.entry a:active {
+    position: relative;
+    top: 2px;
+    left: 2px;
+    box-shadow: none;
+}
+.control button {
+    font-size: 1rem;
+    font-weight: 550;
+}
+.control label {
+    font-size: 0.8rem;
+    font-style: italic;
+}
+.control input {
+    width: 120px;
+}
+.button a, .control button {
+    margin: 0.5rem;
+    padding: 0.5rem;
+    border: none;
+    border-radius: 0.2rem;
+    box-shadow: 2px 2px 2px rgb(107, 107, 107);
+    background-color: darkgrey;
+    color: rgb(19, 19, 19);
+}
+
+.button a:hover, .control button:hover {
+    background-color: rgb(141, 140, 140);
+}
+.button a:active, .control button:active {
+    position: relative;
+    top: 2px;
+    left: 2px;
+}
+.list {
+    display: grid;
+}
+.items p, .items a {
+    display: block;
+    font-size: 0.8rem;
+    font-weight: 400;
+    color: rgb(0, 14, 14);
+    margin: 0.2rem;
+    padding: 0.4rem;
+}
+
+.list img {
+    width: 24px;
+    margin: 0.2rem;
+}
+.headers p {
+    display: block;
+    font-size: 0.8rem;
+    font-weight: 550;
+    color: rgb(0, 14, 14);
+    margin: 0.2rem;
+    padding: 0.4rem;
+    /* background-color: dimgrey; */
+}
+
+.col1h {grid-area: 1/1;}
+.col2h {grid-area: 1/2;}
+.col3h {grid-area: 1/3;}
+.col4h {grid-area: 1/4;}
+.col5h {grid-area: 1/5;}
+.col6h {grid-area: 1/6;}
+.col7h {grid-area: 1/7;}
+.col8h {grid-area: 1/8;}
+.col9h {grid-area: 1/9;}
+.col10h {grid-area: 1/10;}
+
+
+/* .col1 {grid-area: 2/1;}
+.col2 {grid-area: 2/2;}
+.col3 {grid-area: 2/3;}
+.col4 {grid-area: 2/4;}
+.col5 {grid-area: 2/5;}
+.col6 {grid-area: 2/6;}
+.col7 {grid-area: 2/7;}
+.col8 {grid-area: 2/8;}
+.col9 {grid-area: 2/9;} */
+
+.col_button a {
+    display: block;
+    padding: 0.3rem;
+    border-radius: 0.3rem;
+    background-color: rgb(0, 197, 0);
+    box-shadow: 2px 2px 2px green;
+}
+.col_button a:hover {
+    background-color: rgb(2, 146, 2);
+}
+.col_button a:active {
+    position: relative;
+    top: 2px;
+    left: 2px;
+}
